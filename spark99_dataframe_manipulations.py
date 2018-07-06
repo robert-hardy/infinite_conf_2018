@@ -1,0 +1,5 @@
+features.printSchema()
+features.head(10)
+features.describe().show()
+features.limit(10).crosstab('DepDelay', 'ArrDelay').show()
+features.where(features.ArrDelay.isNull()).count()
